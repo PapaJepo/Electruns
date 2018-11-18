@@ -5,10 +5,12 @@ using UnityEngine;
 public class Door : MonoBehaviour {
 
     private Renderer DoorSprite;
+    private Collider2D boxCollider;
     private float CONcounter, INcounter;
 	void Start ()
     {
         DoorSprite = GetComponent<Renderer>();
+        boxCollider = GetComponent<BoxCollider2D>();
 	}
 	
 	
@@ -17,6 +19,7 @@ public class Door : MonoBehaviour {
 		if((CONcounter > 0) &&(INcounter > 0))
         {
             DoorSprite.enabled = false;
+            boxCollider.enabled = false;
         }
 	}
 

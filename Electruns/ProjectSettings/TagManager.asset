@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Conductor
   - Insulator
+  - Wire
+  - Power
   layers:
   - Default
   - TransparentFX
